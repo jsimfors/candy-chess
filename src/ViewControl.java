@@ -47,10 +47,16 @@ class ViewControl extends JFrame implements ActionListener {
                 board[i][j] = button;
                 board[i][j].addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
+                        System.out.println("Action performed");
+                        /*
                         if (game.move(button.i, button.j)) {
                             updateAll(n);
                         }
+                        */
+
                         display.setText(gm.getMessage());
+
+
                     }
                 });
                 buttons.add(board[i][j]);
@@ -62,9 +68,9 @@ class ViewControl extends JFrame implements ActionListener {
         Container content = window.getContentPane();
         content.setLayout(new BorderLayout());
         content.setBackground(Color.decode("#ffeb99"));
-        content.add(BorderLayout.NORTH, display);
         content.add(BorderLayout.NORTH, header);
         content.add(BorderLayout.CENTER, buttons);
+        content.add(BorderLayout.SOUTH, display);
 
         window.pack();
         window.setVisible(true);

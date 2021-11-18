@@ -8,6 +8,6 @@ public class King implements Piece {
 
     @Override
     public String getImageAddress() {
-        return imageAddress;
+        return "/pieces/imgs/king_c.png";
     }
 }
