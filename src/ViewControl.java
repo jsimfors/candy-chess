@@ -1,5 +1,6 @@
 // lämpliga import-satser här
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,16 +18,20 @@ class ViewControl extends JFrame implements ActionListener {
         this.board = new Square[n][n];
 
         JLabel display; // the display
+        JLabel header;
 
         JFrame window = new JFrame();
         window.setPreferredSize(new Dimension(840,840));
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JPanel buttons = new JPanel();
-        buttons.setBackground(Color.CYAN);
 
-        buttons.setLayout(new GridLayout(n, n, 1, 1));
+        JPanel buttons = new JPanel();
+        buttons.setBackground(Color.decode("#ffeb99"));
+
+        buttons.setLayout(new GridLayout(n+1, n, 1, 1));
         display = new JLabel(gm.getMessage(), JLabel.LEFT);
+        header = new JLabel(new ImageIcon("src/pieces/header_smaller.png"));
+        header.setBackground(Color.decode("#ffeb99"));
 
 
         for (int i = 0; i < n; i++) {
@@ -35,9 +40,9 @@ class ViewControl extends JFrame implements ActionListener {
                 /* White if: i=0 and j = even */
                 /* white if: i=1, and */
                 if((j%2==0 && i%2==0) || (j%2!=0 && i%2!=0)) {
-                    button = new Square(i, j, Color.white, String.valueOf(gm.getStatus(i, j)));
+                    button = new Square(i, j, Color.decode("#f7f0eb"), String.valueOf(gm.getStatus(i, j)));
                 } else {
-                    button = new Square(i, j, Color.black, String.valueOf(gm.getStatus(i, j)));
+                    button = new Square(i, j, Color.decode("#121111"), String.valueOf(gm.getStatus(i, j)));
                 }
                 board[i][j] = button;
                 board[i][j].addActionListener(new ActionListener() {
@@ -56,7 +61,9 @@ class ViewControl extends JFrame implements ActionListener {
 
         Container content = window.getContentPane();
         content.setLayout(new BorderLayout());
+        content.setBackground(Color.decode("#ffeb99"));
         content.add(BorderLayout.NORTH, display);
+        content.add(BorderLayout.NORTH, header);
         content.add(BorderLayout.CENTER, buttons);
 
         window.pack();

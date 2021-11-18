@@ -24,7 +24,7 @@ public class Square extends JButton {
     public void setColor() {
         this.s1 = this.getText();
         if (this.s1.equals("  ")) {
-            setBackground(Color.CYAN);
+            setBackground(Color.decode("#ffeb99"));
         } else {
             setBackground(c1);
         }
