@@ -2,14 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19a2b0e3-6839-4b3d-b13b-5a7fdb724054" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pieces/King.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pieces/Piece.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/Boardgame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chess/Boardgame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/Chess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chess/Chess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chess/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/ViewControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chess/ViewControl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/bishop_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/bishop_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/bishop_w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/candy_images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/header.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/header_smaller.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/king_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/king_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/king_w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/knight_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/knight_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/knight_w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/pawn_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/pawn_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/pawn_w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/queen_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/queen_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/queen_w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/rook_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/rook_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/rook_w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Boardgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boardgame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ViewControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ViewControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/bishop_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/bishop_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/bishop_w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/candy_images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/header.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/header_smaller.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/king_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/king_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/king_w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/knight_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/knight_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/knight_w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/pawn_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/pawn_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/pawn_w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/queen_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/queen_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/queen_w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/rook_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/rook_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/rook_w.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,9 +83,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -70,7 +131,7 @@
       <updated>1637142715319</updated>
       <workItem from="1637142719273" duration="179000" />
       <workItem from="1637151334479" duration="390000" />
-      <workItem from="1637235146555" duration="647000" />
+      <workItem from="1637235146555" duration="4753000" />
     </task>
     <servers />
   </component>
@@ -78,26 +139,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1386" height="215" key="GridCell.Tab.0.bottom" timestamp="1637235803143">
+    <state x="527" y="155" key="#com.intellij.ide.util.MemberChooser" timestamp="1637239022645">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="527" y="155" key="#com.intellij.ide.util.MemberChooser/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637239022645" />
+    <state width="1386" height="104" key="GridCell.Tab.0.bottom" timestamp="1637239945565">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="215" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1637186677092" />
-    <state width="1386" height="215" key="GridCell.Tab.0.bottom/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637235803143" />
-    <state width="1386" height="215" key="GridCell.Tab.0.center" timestamp="1637235803142">
+    <state width="1386" height="104" key="GridCell.Tab.0.bottom/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637239945565" />
+    <state width="1386" height="104" key="GridCell.Tab.0.center" timestamp="1637239945564">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="215" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1637186677091" />
-    <state width="1386" height="215" key="GridCell.Tab.0.center/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637235803142" />
-    <state width="1386" height="215" key="GridCell.Tab.0.left" timestamp="1637235803141">
+    <state width="1386" height="104" key="GridCell.Tab.0.center/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637239945564" />
+    <state width="1386" height="104" key="GridCell.Tab.0.left" timestamp="1637239945562">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="215" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1637186677090" />
-    <state width="1386" height="215" key="GridCell.Tab.0.left/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637235803141" />
-    <state width="1386" height="215" key="GridCell.Tab.0.right" timestamp="1637235803143">
+    <state width="1386" height="104" key="GridCell.Tab.0.left/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637239945562" />
+    <state width="1386" height="104" key="GridCell.Tab.0.right" timestamp="1637239945564">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="215" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1637186677091" />
-    <state width="1386" height="215" key="GridCell.Tab.0.right/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637235803143" />
+    <state width="1386" height="104" key="GridCell.Tab.0.right/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637239945564" />
     <state x="393" y="271" key="com.intellij.ide.util.TipDialog" timestamp="1637235174286">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

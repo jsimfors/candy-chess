@@ -30,7 +30,7 @@ class ViewControl extends JFrame implements ActionListener {
 
         buttons.setLayout(new GridLayout(n+1, n, 1, 1));
         display = new JLabel(gm.getMessage(), JLabel.LEFT);
-        header = new JLabel(new ImageIcon("src/pieces/header_smaller.png"));
+        header = new JLabel(new ImageIcon("src/pieces/imgs/header_smaller.png"));
         header.setBackground(Color.decode("#ffeb99"));
 
 
@@ -38,11 +38,11 @@ class ViewControl extends JFrame implements ActionListener {
             for (int j = 0; j < n; j++) {
                 Square button;
                 /* White if: i=0 and j = even */
-                /* white if: i=1, and */
+                /* white if: i=1, and j = odd */
                 if((j%2==0 && i%2==0) || (j%2!=0 && i%2!=0)) {
-                    button = new Square(i, j, Color.decode("#f7f0eb"), String.valueOf(gm.getStatus(i, j)));
+                    button = new Square(i, j, Color.decode("#f7f0eb"), game.getPieceImage(i, j));
                 } else {
-                    button = new Square(i, j, Color.decode("#121111"), String.valueOf(gm.getStatus(i, j)));
+                    button = new Square(i, j, Color.decode("#121111"), game.getPieceImage(i, j));
                 }
                 board[i][j] = button;
                 board[i][j].addActionListener(new ActionListener() {
@@ -76,7 +76,7 @@ class ViewControl extends JFrame implements ActionListener {
     public void updateAll(int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                board[i][j].setText(String.valueOf(game.getStatus(i, j)));
+                board[i][j].setText(String.valueOf(game.getPieceImage(i, j)));
                 board[i][j].setColor();
             }
         }

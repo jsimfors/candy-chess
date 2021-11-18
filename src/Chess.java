@@ -1,19 +1,33 @@
+import pieces.King;
+import pieces.Piece;
+
+import javax.swing.*;
+
 class Chess implements Boardgame {
     private String currentMessage = "No message yet";
-    private String[][] board = new String[8][8];   // spelplanen
+
+    private Piece[][] board = new Piece[8][8];   // spelplanen
+    // ^ denna raden va tidigare:
+    //private String[][] board = new String[8][8];
+    // tänkte att varje ruta ska ju nu innehålla mer info, så kanske kan göra ett pjäs-objekt?
+    // se interfacet Piece
+
     private int iemp, jemp; // index till den tomma rutan
 
     public Chess() {
+        // I framtiden: ändra så det inte endast är en King på alla rutor hehe
+        King thePiece = new King();
+
         int val = 1;
         for (int x = 0; x < 8; x++) {
             for (int y = 0; y < 8; y++) {
                 if (val < 64) {
-                    this.board[x][y] = String.valueOf(val);
+                    this.board[x][y] = thePiece;
                     val++;
                 }
             }
         }
-        this.board[7][7] = " ";
+        this.board[7][7] = thePiece;
 
 
         this.iemp = 7;
@@ -87,13 +101,13 @@ class Chess implements Boardgame {
         return true;
     }
 
-    public String getStatus(int i, int j){
-        if(board[i][j] == null){
-            return "  ";
-        } else if(Integer.parseInt(board[i][j]) < 10){
-            return board[i][j] + " ";
-        }
-        return board[i][j];
+    public String getPieceImage(int i, int j){
+        // tidigare metoden: getStatus():
+
+        // i framtiden vill vi nog snarare skriva typ:
+        // return board[i][j].getImageAddress();
+
+        return "/pieces/imgs/king_c.png";
     }
 
     public String getMessage(){
