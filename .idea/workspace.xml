@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19a2b0e3-6839-4b3d-b13b-5a7fdb724054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pieces/Bishop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pieces/Knight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pieces/Pawn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pieces/Rook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pieces/imgs/screenshot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/Queen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +38,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pieces/imgs" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -88,7 +85,7 @@
       <workItem from="1637151334479" duration="390000" />
       <workItem from="1637235146555" duration="6480000" />
       <workItem from="1637313456752" duration="409000" />
-      <workItem from="1637505290658" duration="2715000" />
+      <workItem from="1637505290658" duration="3243000" />
     </task>
     <servers />
   </component>
