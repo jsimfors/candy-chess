@@ -1,13 +1,18 @@
 package pieces;
 
 public class King implements Piece {
+    public String color;
 
-    public King() {
-        String imageAddress = "/pieces/imgs/king_c.png";
+    public King(String color) {
+        this.color = color;
     }
 
     @Override
     public String getImageAddress() {
-        return "/pieces/imgs/king_c.png";
+        if(this.color.equals("black")){
+            return "/pieces/imgs/king_c_b.png";
+        } else {
+            return "/pieces/imgs/king_c_w.png";
+        }
     }
 }

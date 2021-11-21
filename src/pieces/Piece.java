@@ -11,7 +11,5 @@ public interface Piece {
     * Men alla pjäser extendera detta interface.
     *  */
 
-    // Sålänge:
-    String imageAddress =  "/pieces/imgs/king_c.png";
     public String getImageAddress();
 }

@@ -1,18 +1,18 @@
 package pieces;
 
-public class Queen implements Piece {
+public class Knight implements Piece {
     public String color;
 
-    public Queen(String color) {
+    public Knight(String color) {
         this.color = color;
     }
 
     @Override
     public String getImageAddress() {
         if(this.color.equals("black")){
-            return "/pieces/imgs/queen_c_b.png";
+            return "/pieces/imgs/knight_c_b.png";
         } else {
-            return "/pieces/imgs/queen_c_w.png";
+            return "/pieces/imgs/knight_c_w.png";
         }
     }
 }

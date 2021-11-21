@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19a2b0e3-6839-4b3d-b13b-5a7fdb724054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pieces/Queen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pieces/Bishop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pieces/Knight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pieces/Pawn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pieces/Rook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chess/Boardgame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chess/Boardgame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chess/Chess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chess/Chess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chess/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chess/Square.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chess/ViewControl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chess/ViewControl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chess/ViewControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chess/ViewControl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chess/pieces/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chess/pieces/King.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Boardgame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boardgame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Chess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ViewControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ViewControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pieces/Queen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +28,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="212ceFUEo1juYqpqoka5oUrfHUQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -88,7 +86,9 @@
       <updated>1637142715319</updated>
       <workItem from="1637142719273" duration="179000" />
       <workItem from="1637151334479" duration="390000" />
-      <workItem from="1637235146555" duration="5697000" />
+      <workItem from="1637235146555" duration="6480000" />
+      <workItem from="1637313456752" duration="409000" />
+      <workItem from="1637505290658" duration="2715000" />
     </task>
     <servers />
   </component>
@@ -100,29 +100,29 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="527" y="155" key="#com.intellij.ide.util.MemberChooser/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637239022645" />
-    <state width="1386" height="53" key="GridCell.Tab.0.bottom" timestamp="1637240892768">
+    <state width="1369" height="162" key="GridCell.Tab.0.bottom" timestamp="1637508340250">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="215" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1637186677092" />
-    <state width="1386" height="53" key="GridCell.Tab.0.bottom/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637240892768" />
-    <state width="1386" height="53" key="GridCell.Tab.0.center" timestamp="1637240892767">
+    <state width="1369" height="162" key="GridCell.Tab.0.bottom/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637508340250" />
+    <state width="1369" height="162" key="GridCell.Tab.0.center" timestamp="1637508340248">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="215" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1637186677091" />
-    <state width="1386" height="53" key="GridCell.Tab.0.center/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637240892767" />
-    <state width="1386" height="53" key="GridCell.Tab.0.left" timestamp="1637240892766">
+    <state width="1369" height="162" key="GridCell.Tab.0.center/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637508340248" />
+    <state width="1369" height="162" key="GridCell.Tab.0.left" timestamp="1637508340247">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="215" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1637186677090" />
-    <state width="1386" height="53" key="GridCell.Tab.0.left/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637240892766" />
-    <state width="1386" height="53" key="GridCell.Tab.0.right" timestamp="1637240892768">
+    <state width="1369" height="162" key="GridCell.Tab.0.left/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637508340247" />
+    <state width="1369" height="162" key="GridCell.Tab.0.right" timestamp="1637508340249">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="215" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1637186677091" />
-    <state width="1386" height="53" key="GridCell.Tab.0.right/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637240892768" />
-    <state x="393" y="271" key="com.intellij.ide.util.TipDialog" timestamp="1637235174286">
+    <state width="1369" height="162" key="GridCell.Tab.0.right/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637508340249" />
+    <state x="393" y="271" key="com.intellij.ide.util.TipDialog" timestamp="1637505291879">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="393" y="271" key="com.intellij.ide.util.TipDialog/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637235174286" />
+    <state x="393" y="271" key="com.intellij.ide.util.TipDialog/1440.-157.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1637505291879" />
   </component>
 </project>
