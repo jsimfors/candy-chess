@@ -15,4 +15,7 @@ public class Pawn implements Piece {
             return "/pieces/imgs/pawn_c_w.png";
         }
     }
+
+    // move(){}
+    // checkWheretoMove(){}
 }

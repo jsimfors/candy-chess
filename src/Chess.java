@@ -15,12 +15,6 @@ class Chess implements Boardgame {
 
     public Chess() {
         // I framtiden: ändra så det inte endast är en King på alla rutor hehe
-        King king_w = new King("white");
-        King king_b = new King("black");
-
-        Queen queen_w = new Queen("white");
-        Queen queen_b = new Queen("black");
-
 
         int val = 1;
         for (int x = 0; x < 8; x++) {

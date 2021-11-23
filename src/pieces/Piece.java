@@ -12,4 +12,7 @@ public interface Piece {
     *  */
 
     public String getImageAddress();
+    // public String checkPossibleMoves();
+
+    // move();
 }

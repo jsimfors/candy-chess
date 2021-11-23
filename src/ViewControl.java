@@ -48,6 +48,17 @@ class ViewControl extends JFrame implements ActionListener {
                 board[i][j].addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
                         System.out.println("Action performed");
+                        // klick 1: användaren har klickat på en pjäs
+                        // Visa upp möjliga drag, (genom att ändra färg)
+
+                        // klick 2: användaren har klickat på en ruta att gå till
+                        // Ok ruta? pjäsen flyttas
+                        //          Kolla om pjäs slagit ut annan
+                        //          Har det blivit schack?
+                        //          Kommit till motsatt ände med Pawn?
+                        //              Användaren får lägga till en till pjäs
+                        // Inte ok ruta? Felmeddelande
+                        //
                         /*
                         if (game.move(button.i, button.j)) {
                             updateAll(n);
