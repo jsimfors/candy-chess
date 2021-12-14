@@ -1,18 +1,92 @@
 package pieces;
 
-public interface Piece {
-    /* A class for status of a specific piece. For every piece we need to:
-    Get image (string of image address?)
-    Move the piece
-    Get the current position?
-    Save info about HOW this piece can move
+import game.*;
+import java.util.HashSet;
 
-    * tänkte typ att alla pjäser kan ha en egen klass, som håller koll på hur den pjäsen får flyttas osv.
-    * Men alla pjäser extendera detta interface.
-    *  */
+public abstract class Piece {
+    /** --- Abstract class for all the pieces to follow --- **/
+    public String colour;
+    public PiecePosition pieceposition;
+    public User user;
+    public String type;
+    protected HashSet<PiecePosition> ok_movements;
+    protected String imageAddress;
 
-    public String getImageAddress();
-    // public String checkPossibleMoves();
+    public Piece(User user, PiecePosition piecePosition){
+        this.colour = user.getColour();
+        this.pieceposition = piecePosition;
+        Chess chess = Chess.getCurrentBoard();
+        chess.addingPiece(this, piecePosition);
+        this.user = user;
+        this.user.addingPiece(this);
+    }
 
-    // move();
+    /** Methods for the characteristics of a piece, color, type etc. ***/
+
+    public String getColor() {
+        // Color of the team, red or blue.
+        return colour;
+    }
+    public String getType() {
+        // Returns what type of piece, ex "Pawn", for front-end message
+        return type;
+    }
+
+    public PiecePosition getPiecePosition() {
+        return pieceposition;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public String getImageAddress() {
+        return imageAddress;
+    }
+
+
+    /** Methods for the movement of piece (available movements, capture candy? etc.). ***/
+
+    public HashSet<PiecePosition> getOk_movements() {
+        return ok_movements;
+    }
+
+
+    public boolean moveTo(PiecePosition piecePosition) {
+        if (ok_movements.contains(piecePosition)) {
+            Chess chess = Chess.getCurrentBoard();
+            Piece opponents_candy = chess.gettingPieceAtPosition(piecePosition);
+            if (opponents_candy != null) {
+                // We ate of opponents candy :D
+                ateOpponentsCandy(opponents_candy);
+            } else {
+                // We did not eat of opponents candy :(
+                String nextPlayer;
+                if( chess.getCurrentUser().getColour().equals("red")){
+                    nextPlayer = "blue";
+                } else {
+                    nextPlayer = "red";
+                }
+                chess.setMessage("It is " + nextPlayer + "'s turn");
+            }
+
+            chess.movingPiece(this, piecePosition);
+            this.pieceposition = piecePosition;
+            return true;
+        }
+
+        return false;
+    }
+
+    protected void ateOpponentsCandy(Piece opponent) {
+        Chess chess = Chess.getCurrentBoard();
+        String[] candy_crush_word = {"Delicious!", "Sweet!", "Tasty!", "Sugar crushing it!", "Divine!", "Sodalicious!", "Juicy!"};
+        chess.setMessage(chess.getCurrentUser().getColour() + " ate a " + opponent.getType() + "! " + candy_crush_word[(int)(Math.random() * (6 + 1))]);
+        chess.removingPiece(opponent.pieceposition);
+    }
+
+    abstract public HashSet<PiecePosition> checkIfOkMovement();
+
+    abstract protected void movingPiece(HashSet<PiecePosition> result, int horizontal_move, int vertical_move);
+
 }
